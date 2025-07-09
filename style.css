@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+
+  * {
+  box-sizing: border-box;
+  }
+
+  }
+  header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  section {
+    padding: 20px;
+  }
+  .contact, .services, .gallery, .profile-photo, .social {
+    background-color: white;
+    margin: 10px auto;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  footer {
+    text-align: center;
+    font-size: 0.9em;
+    padding: 10px;
+    color: #555;
+  }
+  .highlight {
+    color: #1e3a8a;
+    font-weight: bold;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  video {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+  .social a {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #1e3a8a;
+    border: 1px solid #1e3a8a;
+    padding: 10px 15px;
+    border-radius: 6px;
+    transition: background 0.3s, color 0.3s;
+  }
+  .social a:hover {
+    background-color: #1e3a8a;
+    color: white;
+  }
+  .floating-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1000;
+  }
+  .floating-button.call {
+    left: auto;
+    right: 20px;
+  }
+  .floating-button a {
+    transition: .3s;
+  }
+  .floating-button a:hover {
+    transform: scale(1.1);
+  }
+  .floating-button.call a img {
+      background: white;
+      border-radius: 50%;
+      padding: 1px;
+      width: 50px;
+      height: 50px;
+  }
+
+  .video-grid {
+    margin-bottom:20px;
+  }
+   .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+  }
+  .gallery-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s;
+  }
+    .team-member:hover img,
+  .gallery-grid img:hover {
+    transform: scale(1.05);
+  }
+
+    .team-title {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+  
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+  
+    .team-member {
+      background: #fff;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+  
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 10px;
+      transition: transform 0.3s;
+    }
+  
+    .team-member h4 {
+      margin: 5px 0;
+      font-size: 18px;
+    }
+  
+    .team-member p {
+      font-size: 14px;
+      color: #666; }
